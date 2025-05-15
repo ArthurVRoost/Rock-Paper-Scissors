@@ -6,6 +6,7 @@ import Modal from './components/Modal/Modal'
 import Versus from './components/Versus/Versus'
 
 function App() {
+
   const [afficherVersus, setAfficherVersus] = useState(false)
   const [afficherChoix, setAfficherChoix] = useState(true)
   const [joueurChoix, setJoueurChoix] = useState(null)
@@ -56,7 +57,7 @@ function App() {
      <Header score={score}/>
      {afficherChoix &&
       <Jeu pick={pick}/>}
-      {afficherVersus && <Versus pick={pick} joueurChoix={joueurChoix} ordiChoix={ordiChoix} result={result} />}
+      {afficherVersus && <Versus pick={pick} joueurChoix={joueurChoix} ordiChoix={ordiChoix} result={result}  />}
      <Modal/>
     </>
   )

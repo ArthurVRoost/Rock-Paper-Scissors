@@ -16,6 +16,18 @@ export default function Versus({pick, joueurChoix, ordiChoix, result}) {
                 break;
         }
     }
+    const boutonClasse = (choice) => {
+  switch (choice) {
+    case "feuille":
+      return "bouton1";
+    case "ciseaux":
+      return "bouton2";
+    case "pierre":
+      return "bouton3";
+    default:
+      return "";
+  }
+}
     return(
         <>
         <div className="divVersus">
@@ -24,7 +36,7 @@ export default function Versus({pick, joueurChoix, ordiChoix, result}) {
                     <h2 className="versusDiv1Div1H2">YOU PICKED</h2>
                 </div>
                 <div className="versusDiv1Div2">
-                    <button className="bouton2Versus"> <img className="versusDiv1Div2Img" src={choixImg(joueurChoix)} alt="" /></button>
+                    <button className={boutonClasse(joueurChoix)}> <img className="versusDiv1Div2Img" src={choixImg(joueurChoix)} alt="" /></button>
                     
                 </div>
             </div>
@@ -41,7 +53,7 @@ export default function Versus({pick, joueurChoix, ordiChoix, result}) {
                     <h2 className="versusDiv3Div1H2">THE HOUSE PICKED</h2>
                 </div>
                 <div className="versusDiv3Div2">
-                    <button className="bouton3Versus"><img className="versusDiv3Div2Img" src={choixImg(ordiChoix)} alt="" /></button>
+                    <button className={boutonClasse(ordiChoix)}><img className="versusDiv3Div2Img" src={choixImg(ordiChoix)} alt="" /></button>
                     
                 </div>
             </div>

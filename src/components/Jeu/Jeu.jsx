@@ -8,6 +8,7 @@ export {ciseaux}
 export {pierre}
 export {feuille}
 export default function Jeu({pick}) {
+    
     return(
         <>
         <div className="divJeu">

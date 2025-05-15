@@ -14,15 +14,14 @@ export default function Modal() {
         </div>
         {isOpen &&(
               <div className="modalOverlay" onClick={toggleModal} >
-                {/* POUR EVITER QU'EN CLIQUANT SUR L'IMAGE LE MODAL DISPARAIT */}
                 <div className="modalContent"  >
-                    <div className="divRules">
+                    <div className="divRules" >
                         <p className="rulesP">RULES</p>
                         <img className="rulesImg" src={croix} alt="" />
                     </div>
                     
                     <img className="modalImg" src={photoModal} alt=""/>
-                 </div>
+                </div>
              </div>
         )}
        

@@ -3,7 +3,6 @@
   bottom: 5%;
   right: 5%;
 }
-
 .modalP {
   padding: 10px 40px;
   background-color: transparent;
@@ -12,7 +11,6 @@
   border-radius: 8px;
   cursor: pointer;
 }
-
 .modalOverlay {
   position: fixed;
   top: 0;
@@ -23,18 +21,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 999;
+  z-index: 2;
 }
 
 .modalContent {
   background-color: white;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
-
 .modalImg {
-  height: 300px;
-  width: 200px;
+  height: 400px;
+  width: 400px;
   object-fit: contain;
+}
+.divRules{
+    display: flex;
+    align-items: center;
+}
+.rulesP{
+    margin-left: 5%;
+    font-size: 25px;
+    font-weight: 600;
+}
+.rulesImg{
+    width: 20px;
+    height: 20px;
+    margin-left: 70%;
+    cursor: pointer;
 }

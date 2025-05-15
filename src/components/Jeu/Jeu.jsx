@@ -16,16 +16,16 @@ export default function Jeu({pick}) {
             </div>
 
             <div className="jeuDiv2">
-                <button className="bouton1" onClick={pick}>
+                <button className="bouton1" onClick={()=> pick("feuille")}>
                     <img className="jeuDiv2Img1" src={feuille} alt="" />
                 </button>
-                <button className="bouton2" onClick={pick}>
+                <button className="bouton2" onClick={()=> pick("ciseaux")}>
                     <img className="jeuDiv2Img2" src={ciseaux} alt="" />
                 </button>
             </div>
 
             <div className="jeuDiv3">
-                <button className="bouton3" onClick={pick}>
+                <button className="bouton3" onClick={()=> pick("pierre")}>
                     <img className="jeuDiv3Img" src={pierre} alt="" />
                 </button>
             </div>

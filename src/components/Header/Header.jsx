@@ -2,8 +2,7 @@ import { useState } from "react";
 import './header.css'
 import photoHeader from "../../assets/images/logo.svg"
 
-export default function Header() {
-    const [count, setCount] = useState(0)
+export default function Header({score}) {
     return(
         <>
         <div className="divHeader">
@@ -13,7 +12,7 @@ export default function Header() {
             
             <div className="headerDiv2">
                 <p className="headerP1">SCORE</p>
-                <p className="headerP2">{count}</p>
+                <p className="headerP2">{score}</p>
             </div>
         </div>
         </>

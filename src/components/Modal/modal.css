@@ -1,0 +1,17 @@
+.divModal{
+    width: 130px;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.modalP{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 13px 40px;
+    margin: 0;
+}

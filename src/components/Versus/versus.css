@@ -1,0 +1,67 @@
+.divVersus{
+    display: flex;
+    margin-top: 3%;
+    margin-left: 26%;
+}
+.versusDiv1Div1H2{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+.versusDiv3Div1H2{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+.bouton1Versus{
+    border: 15px solid hsl(230, 89%, 62%) ;
+    border-radius: 50%;
+    padding: 35px 40px;
+    margin-left:35% ;
+    position: absolute;
+    top: 37%;
+    cursor: pointer;
+    box-shadow: 0px 6px 0px 0px hsl(230, 75%, 43%);
+}
+
+.bouton2Versus{
+    border: 15px solid hsl(39, 89%, 49%) ;
+    border-radius: 50%;
+    padding: 35px 40px;
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+    margin-left: -2%;
+    box-shadow: 0px 6px 0px 0px hsl(40, 95%, 40%);
+
+}
+.bouton3Versus{
+    border: 15px solid hsl(349, 71%, 52%) ;
+    border-radius: 50%;
+    padding: 38px 40px;
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+    box-shadow: 0px 6px 0px 0px hsl(349, 95%, 30%);
+}
+.versusDiv2{
+    margin-left: 16%;
+    margin-top: 7%;
+    text-align: center;
+}
+.versusDiv3{
+    margin-left: 14%;
+}
+.versusDiv2Div1H1{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.versusDiv2Div2Btn{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    color: red;
+    cursor: pointer;
+}

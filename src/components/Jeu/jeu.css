@@ -1,0 +1,34 @@
+.jeuDiv1{
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+    z-index: -1;
+}
+
+.bouton1{
+    border: 15px solid hsl(230, 89%, 62%) ;
+    border-radius: 50%;
+    padding: 25px 30px;
+    margin-left:35% ;
+    position: absolute;
+    top: 37%;
+    cursor: pointer;
+}
+.bouton2{
+    border: 15px solid hsl(39, 89%, 49%) ;
+    border-radius: 50%;
+    padding: 25px 30px;
+    margin-left:55% ;
+    position: absolute;
+    top: 37%;
+    cursor: pointer;
+}
+.bouton3{
+    border: 15px solid hsl(349, 71%, 52%) ;
+    border-radius: 50%;
+    padding: 30px 30px;
+    margin-left:45% ;
+    position: absolute;
+    top: 70%;
+    cursor: pointer;
+}

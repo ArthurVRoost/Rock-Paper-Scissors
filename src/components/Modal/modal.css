@@ -49,3 +49,11 @@
     margin-left: 70%;
     cursor: pointer;
 }
+@media (max-width: 576px) {
+    .modalImg {
+        height: 95vh;
+        width: 95vw;
+        object-fit: contain;
+    }
+   
+}

@@ -1,3 +1,4 @@
+// IMPORTS
 import { use, useState } from 'react'
 import './App.css'
 import Header from './components/Header/Header'
@@ -5,8 +6,9 @@ import Jeu from './components/Jeu/Jeu'
 import Modal from './components/Modal/Modal'
 import Versus from './components/Versus/Versus'
 
+// FONCTIONS ETC
 function App() {
-
+  // CONST 
   const [afficherVersus, setAfficherVersus] = useState(false)
   const [afficherChoix, setAfficherChoix] = useState(true)
   const [joueurChoix, setJoueurChoix] = useState(null)
@@ -15,6 +17,7 @@ function App() {
   const [score, setScore] = useState(0)
   const  choix = ["pierre", "feuille", "ciseaux"]
   
+  // REGLES JEU ET CE QUE CA DOIT RETURN
   const gagnant = (joueur, ordi) =>{
     if (joueur === ordi) return "DRAW"
     if (
@@ -27,6 +30,7 @@ function App() {
     return "YOU LOSE"
   }
 
+  // UPDATE SCORE
   const updateScore = (result) =>{
     if (result === "YOU WIN"){
       setScore(prevScore => prevScore +1)
@@ -36,6 +40,7 @@ function App() {
     }
   }
 
+  // RANDOM CHOIX POUR ORDI + JOUEUR CHOIX ET CHOIX PAR DEFAULT
   const pick = (choice) =>{
     if (!afficherVersus){
       const randomIndex = Math.floor(Math.random()*3)
@@ -48,12 +53,14 @@ function App() {
       updateScore(resultat)
 
     }
+    // CREE UN TOGGLE POUR VERUS ET JEU
     setAfficherVersus(open=>!open)
     setAfficherChoix(close=>!close)
   }
 
   return (
     <>
+    {/* EVALUATION CONDITIONNEL, SI LA CONDITION EST VRAI EXECUTE L'ACTION */}
      <Header score={score}/>
      {afficherChoix &&
       <Jeu pick={pick}/>}

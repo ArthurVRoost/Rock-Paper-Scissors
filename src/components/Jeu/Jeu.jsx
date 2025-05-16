@@ -1,3 +1,4 @@
+// IMPORTS
 import { useState } from "react";
 import './jeu.css'
 import feuille from "/src/assets/images/icon-paper.svg"
@@ -7,6 +8,8 @@ import triangle from "/src/assets/images/bg-triangle.svg"
 export {ciseaux}
 export {pierre}
 export {feuille}
+
+// FONCTIONS ETC
 export default function Jeu({pick}) {
     
     return(

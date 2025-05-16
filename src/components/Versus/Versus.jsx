@@ -1,8 +1,11 @@
+// IMPORTS
 import { useState } from "react";
 import "./versus.css"
 import { ciseaux, feuille, pierre } from "../Jeu/Jeu";
 
+// FONCTIONS ETC
 export default function Versus({pick, joueurChoix, ordiChoix, result}) {
+    // POUR CHOIX DE L'IMAGE
     const choixImg = (choice)=>{
         switch (choice) {
             case "pierre":
@@ -16,12 +19,15 @@ export default function Versus({pick, joueurChoix, ordiChoix, result}) {
                 break;
         }
     }
+    // ANIMATION
     const pulseClasse = (qui) => {
         if (result === "DRAW") return ""; 
         if (result === "YOU WIN" && qui === "joueur") return "pulse";
         if (result === "YOU LOSE" && qui === "ordi") return "pulse";
         return "";
     };
+    
+    // ATTRIBUER LE BON STYLE
    const styleClasse = (choice) => {
     switch (choice) {
         case "feuille":

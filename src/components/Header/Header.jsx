@@ -1,7 +1,9 @@
+// IMPORTS
 import { useState } from "react";
 import './header.css'
 import photoHeader from "../../assets/images/logo.svg"
 
+// FONCTIONS ETC
 export default function Header({score}) {
     return(
         <>

@@ -16,17 +16,24 @@ export default function Versus({pick, joueurChoix, ordiChoix, result}) {
                 break;
         }
     }
-    const boutonClasse = (choice) => {
+    const pulseClasse = (qui) => {
+  if (result === "DRAW") return ""; 
+  if (result === "YOU WIN" && qui === "joueur") return "pulse";
+  if (result === "YOU LOSE" && qui === "ordi") return "pulse";
+  return "";
+};
+   const styleClasse = (choice) => {
   switch (choice) {
     case "feuille":
-      return "bouton1";
+      return "feuilleStyle";
     case "ciseaux":
-      return "bouton2";
+      return "ciseauxStyle";
     case "pierre":
-      return "bouton3";
+      return "pierreStyle";
     default:
       return "";
   }
+
 }
     return(
         <>
@@ -35,8 +42,8 @@ export default function Versus({pick, joueurChoix, ordiChoix, result}) {
                 <div className="versusDiv1Div1">
                     <h2 className="versusDiv1Div1H2">YOU PICKED</h2>
                 </div>
-                <div className="versusDiv1Div2">
-                    <button className={boutonClasse(joueurChoix)}> <img className="versusDiv1Div2Img" src={choixImg(joueurChoix)} alt="" /></button>
+                <div className="versusDiv1Div2 ">
+                    <button className={`circle ${styleClasse(joueurChoix)} ${pulseClasse("joueur")}`}> <img className="versusDiv1Div2Img" src={choixImg(joueurChoix)} alt="" /></button>
                     
                 </div>
             </div>
@@ -52,8 +59,8 @@ export default function Versus({pick, joueurChoix, ordiChoix, result}) {
                 <div className="versusDiv3Div1">
                     <h2 className="versusDiv3Div1H2">THE HOUSE PICKED</h2>
                 </div>
-                <div className="versusDiv3Div2">
-                    <button className={boutonClasse(ordiChoix)}><img className="versusDiv3Div2Img" src={choixImg(ordiChoix)} alt="" /></button>
+                <div className="versusDiv3Div2 ">
+                    <button className={`circle ${styleClasse(ordiChoix)} ${pulseClasse("ordi")}`}><img className="versusDiv3Div2Img" src={choixImg(ordiChoix)} alt="" /></button>
                     
                 </div>
             </div>

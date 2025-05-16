@@ -1,12 +1,30 @@
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 00 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 100px rgba(0, 0, 0, 0);
+  }
+}
+.pulse {
+    animation: pulse-animation 2s infinite;
+}
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 1px 1px #0000001a;
+}
 .divVersus{
     display: flex;
     margin-top: 3%;
-    margin-left: 26%;
+    margin-left: 23%;
 }
 .versusDiv1Div1H2{
     color: white;
     font-size: 20px;
     font-weight: 400;
+    margin-left: 13%;
 }
 .versusDiv3Div1H2{
     color: white;
@@ -64,4 +82,7 @@
     padding: 10px 30px;
     color: red;
     cursor: pointer;
+}
+.versusDiv1Div2{
+    margin-left: -5%;
 }

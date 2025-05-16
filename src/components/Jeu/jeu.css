@@ -49,5 +49,54 @@
 }
 
 @media (max-width: 576px) {
+   .jeuDiv1{
+    margin-top: 25%;
+   }
+   .bouton1{
+    top: 31%;
+    left: -20%;
+   }
+   .bouton2{
+    top: 31%;
+    left: 5%;
+   }
+    .bouton3{
+        top: 68%;
+        left: -7%;
+   }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+    .jeuDiv1{
+    margin-top: 18%;
+   }
+   .bouton1{
+    top: 31%;
+    left: -15%;
+   }
+   .bouton2{
+    top: 31%;
+    left: 5%;
+   }
+    .bouton3{
+    top: 68%;
+    left: -5%;
+   }
     
+}
+@media (min-width: 769px) and (max-width: 1090px) {
+    .jeuDiv1{
+    margin-top: 12%;
+   }
+   .bouton1{
+    top: 31%;
+    left: -8%;
+   }
+   .bouton2{
+    top: 31%;
+    left: 3%;
+   }
+    .bouton3{
+    top: 68%;
+    left: -1%;
+   }
 }

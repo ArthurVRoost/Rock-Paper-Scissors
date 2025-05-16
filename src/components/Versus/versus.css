@@ -86,3 +86,13 @@
 .versusDiv1Div2{
     margin-left: -5%;
 }
+
+@media (max-width: 576px) {
+   
+}
+@media (min-width: 577px) and (max-width: 768px) {
+    
+}
+@media (min-width: 769px) and (max-width: 1090px) {
+    
+}

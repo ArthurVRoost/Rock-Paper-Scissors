@@ -17,22 +17,22 @@ export default function Versus({pick, joueurChoix, ordiChoix, result}) {
         }
     }
     const pulseClasse = (qui) => {
-  if (result === "DRAW") return ""; 
-  if (result === "YOU WIN" && qui === "joueur") return "pulse";
-  if (result === "YOU LOSE" && qui === "ordi") return "pulse";
-  return "";
-};
+        if (result === "DRAW") return ""; 
+        if (result === "YOU WIN" && qui === "joueur") return "pulse";
+        if (result === "YOU LOSE" && qui === "ordi") return "pulse";
+        return "";
+    };
    const styleClasse = (choice) => {
-  switch (choice) {
-    case "feuille":
-      return "feuilleStyle";
-    case "ciseaux":
-      return "ciseauxStyle";
-    case "pierre":
-      return "pierreStyle";
-    default:
-      return "";
-  }
+    switch (choice) {
+        case "feuille":
+        return "feuilleStyle";
+        case "ciseaux":
+        return "ciseauxStyle";
+        case "pierre":
+        return "pierreStyle";
+        default:
+        return "";
+    }
 
 }
     return(
@@ -61,7 +61,6 @@ export default function Versus({pick, joueurChoix, ordiChoix, result}) {
                 </div>
                 <div className="versusDiv3Div2 ">
                     <button className={`circle ${styleClasse(ordiChoix)} ${pulseClasse("ordi")}`}><img className="versusDiv3Div2Img" src={choixImg(ordiChoix)} alt="" /></button>
-                    
                 </div>
             </div>
         </div>
